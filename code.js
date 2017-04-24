@@ -146,12 +146,12 @@ Music163.Send = function (index, count) {
     var _index = index;
     var _count = count;
     this.Start = function () {
-        console.log("¨IÆð·É¨J");
+        console.log("â†–èµ·é£žâ†—");
         console.log("By XA");
         for (var songId = _index; songId < _count; songId++ , _index++) {
             if (canRun) {
                 if (songId % 200 === 0) {
-                    console.log("ÕýÔÚË¢µÚ[" + (songId - index)+ "]Ê×¸è¡£");
+                    console.log("æ­£åœ¨åˆ·ç¬¬[" + (songId - index)+ "]é¦–æ­Œã€‚");
                 }
                 var info = { "type": "song", "wifi": 0, "download": 0, "id": songId, "time": 600, "end": "ui", "source": "list", "sourceId": "576900073" };
                 bc.dK("bi-log", {
@@ -171,8 +171,8 @@ Music163.Send = function (index, count) {
 }
 
 
-var index = 25730500;//¸èÇúÆðÊ¼ID
-var count = index + 10000;//10000ÊÇË¢¸èÊýÁ¿
+var index = 25730500;//æ­Œæ›²èµ·å§‹ID
+var count = index + 10000;//10000æ˜¯åˆ·æ­Œæ•°é‡
 
 var m163 = new Music163.Send(index, count);
 m163.Start();
